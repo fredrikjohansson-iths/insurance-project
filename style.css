@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;700&family=Frank+Ruhl+Libre:wght@700;900&family=Rambla:wght@700&display=swap');
+
+/**/
+
+/* Global */
+
+/* Colors */
+
+:root {
+    --blue: #c6dde9;
+    --red: #f07949;
+    --yellow: #f9b131;
+    --bright: #999999;
+    --brighter: #eaeaea;
+    --brightest: #ffffff;
+    --dim: #4f585d;
+    --dark: #43403f;
+    --darker: #282c2f;
+    --darkest: #000000;
+}
+
+.red {
+    color: var(--red);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.bright {
+    color: var(--bright);
+}
+
+.brighter {
+    color: var(--brighter);
+}
+
+.brightest {
+    color: var(--brightest);
+}
+
+.dim {
+    color: var(--dim);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.darker {
+    color: var(--darker);
+}
+
+.darkest {
+    color: var(--darkest);
+}
+
+.red {
+    color: var(--red);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.bright {
+    color: var(--bright);
+}
+
+.brighter {
+    color: var(--brighter);
+}
+
+.brightest {
+    color: var(--brightest);
+}
+
+.dim {
+    color: var(--dim);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.darker {
+    color: var(--darker);
+}
+
+.darkest {
+    color: var(--darkest);
+}
+
+.red-bg {
+    background-color: var(--red);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+}
+
+.yellow-bg {
+    background-color: var(--yellow);
+}
+
+.bright-bg {
+    background-color: var(--bright);
+}
+
+.brighter-bg {
+    background-color: var(--brighter);
+}
+
+.brightest-bg {
+    background-color: var(--brightest);
+}
+
+.dim-bg {
+    background-color: var(--dim);
+}
+
+.dark-bg {
+    background-color: var(--dark);
+}
+
+.darker-bg {
+    background-color: var(--darker);
+}
+
+.darkest-bg {
+    background-color: var(--darkest);
+}
+
+
+/* Colors end */
+
+/* Fonts */
+
+:root {
+    --link: 'Rambla', sans-serif;
+    --heading: 'Frank Ruhl Libre', serif;
+    --paragraph: 'Fira Sans Condensed', sans-serif;
+}
+
+a {
+    font-family: var(--link);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading);
+}
+
+p {
+    font-family: var(--p-font-fam);
+}
+
+p .small {
+    font-size: small;
+}
+
+p .medium {
+    font-size: medium;
+}
+
+p .large {
+    font-size: large;
+}
+
+p .larger {
+    font-size: larger;
+}
+
+/* Fonts end*/
+
+a {
+
+    text-decoration: none;
+}
+
+nav a {
+
+    color: var(--dim);
+}
+
+nav a:hover {
+    color: var(--darker);
+}
+
+[class^="container-"] {display: flex;}
+
+.card {}
+
+.container-checkerboard {}
+
+.container-threepiece {}
+
+.container-hero {}
+
+.container-split {}
+
+.box {}
+
+.numbered {}
+
+#covered {}
+
+#take-me-up {}
+
+#on-your-mind {}
+
+#on-your-mind {}
+
+#visit-us {}
