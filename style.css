@@ -261,3 +261,69 @@ button.join {
 }
 
 .numbered {}
+
+
+
+/*
+Calle CSS
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.grid--subgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.passepartout {
+    padding: 10%;
+}
+
+.passepartout--bottom {
+    padding: 10% 10% 0% 10%;
+}
+
+.content--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Fonts*/
+
+h2 {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+
+article p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/*IMAGES*/
+.family__img {
+    width: 100%;
+    justify-self: end;
+}
