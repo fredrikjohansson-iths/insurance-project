@@ -306,7 +306,7 @@ background-position: center 40px;
     grid-template-areas:
         "a b";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 500px);
+    grid-template-rows: repeat(1, minmax(375px, 501px));
 
 }
 
@@ -387,7 +387,7 @@ main {
         "a"
         "b";
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-rows: repeat(2, minmax(375px, 501px));
 
 }
 
@@ -497,7 +497,13 @@ DESKTOP LAYOUT
     grid-area: ys;
 }
 
+@media only screen and (max-width: 600px) {
+    .rectangle-big {flex-flow: column; height: 100%;}
+    .card {align-self: center; margin-top: 15%; bottom: 90%; }
+    div[class^="avatar"] {left: 3.5%}
+
 @media only screen and (min-width: 750px) {
+
 
     .grid {
         display :grid;
