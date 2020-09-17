@@ -7,6 +7,7 @@
 html,
 body {
     height: 100%;
+    word-break: break-word;
 }
 
 
@@ -20,7 +21,6 @@ body {
 
 body {
     margin: 0%;
-    vertical-align: middle;
 }
 
 
@@ -254,7 +254,7 @@ nav link:hover {
     background-position: bottom;
     background-size: 30%;
     background-repeat: no-repeat;
-    left: 1.5%;
+    left: 1.25%;
     position: relative;
     top: -25%;
     border-radius: 4px;
@@ -270,7 +270,7 @@ background-position: center 40px;
     background-position: bottom;
     background-size: 30%;
     background-repeat: no-repeat;
-    left: 1.5%;
+    left: 1.25%;
     position: relative;
     top: -25%;
     border-radius: 4px;
@@ -288,7 +288,7 @@ background-position: center 40px;
     background-position: bottom;
     background-size: 30%;
     background-repeat: no-repeat;
-    left: 1.5%;
+    left: 1.25%;
     position: relative;
     top: -25%;
     border-radius: 4px;
@@ -497,10 +497,25 @@ DESKTOP LAYOUT
     grid-area: ys;
 }
 
-@media only screen and (max-width: 600px) {
-    .rectangle-big {flex-flow: column; height: 100%;}
-    .card {align-self: center; margin-top: 15%; bottom: 90%; }
+@media only screen and (max-width: 805px) {
+    .rectangle-big {flex-flow: column; height: 100%;
+        display: flex;
+        flex-flow: column;
+        width: auto;}
+
+        
+    .card {align-self: center; margin-top: 30%; bottom: 90%; }
     div[class^="avatar"] {left: 3.5%}
+
+    .smartphone-hidden {display: none;}
+
+
+    @media only screen and (max-width: 410px) {
+        .rectangle-big p {
+            margin-bottom: 10em;
+        }
+
+   }
 
 @media only screen and (min-width: 750px) {
 
