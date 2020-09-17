@@ -12,8 +12,8 @@ body {
 
 /*COMMENT OUT, Carl*/
 /* html {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 0%;
     margin-top: 0%;
 } */
@@ -175,6 +175,8 @@ button {
     font-family: var(--link);
 }
 
+h1 {font-size: xxx-large;}
+
 h1,
 h2,
 h3,
@@ -227,13 +229,149 @@ nav link:hover {
     display: flex;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+
+
 /* grid */
 
-/* class begins with "grid-" */
-[class^="grid-"] {
+.grid {
     display: grid;
 }
 
+.inline-grid {
+    display: inline-grid;
+}
+
+.avatar-child {
+    background-color: var(--blue);
+    background-image: url(/img/child.png);
+    background-position: bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    left: 1.5%;
+    position: relative;
+    top: -25%;
+    border-radius: 4px;
+    width: 236px;
+height: 150px;
+background-position: center 40px;
+
+}
+
+.avatar-adult {
+    background-color: var(--red);
+    background-image: url(/img/adult.png);
+    background-position: bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    left: 1.5%;
+    position: relative;
+    top: -25%;
+    border-radius: 4px;
+    width: 236px;
+height: 150px;
+background-position: center 40px;
+
+}
+
+.avatar-old 
+
+{
+    background-color: var(--yellow);
+    background-image: url(/img/old.png);
+    background-position: bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    left: 1.5%;
+    position: relative;
+    top: -25%;
+    border-radius: 4px;
+    width: 236px;
+height: 150px;
+background-position: center 40px;
+
+}
+
+.rectangle-big h1 {
+    margin-top: 0%;
+}
+
+.grid-2by1 {
+    grid-template-areas:
+        "a b";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 500px);
+
+}
+
+.avatar-child {
+    background-color: var(--blue);
+    background-image: url(/img/child.png);
+    background-position: bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    left: 1.5%;
+    position: relative;
+    top: -25%;
+    border-radius: 4px;
+    width: 236px;
+height: 150px;
+background-position: center 40px;
+
+}
+
+
+
+
+.card {
+    background-color: var(--brightest);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 1%;
+    margin-right: 2%;
+    position: relative;
+    width: 256px;
+    height: 308px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 30%;
+    text-align: center;
+}
+
+.card h4 {
+    position: relative;
+    bottom: 25%;
+    text-align: center;
+}
+
+.card p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle-big {
+    width: 1002px;
+    height: 612px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:5%;
+}
 .grid-container {}
 
 .grid-container .a {
@@ -251,9 +389,6 @@ nav link:hover {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 500px);
 
-}
-
-.grid-2by1 {
 }
 
 button.join {
