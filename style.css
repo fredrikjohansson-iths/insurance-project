@@ -30,7 +30,7 @@ body {
     --blue: #c6dde9;
     --red: #f07949;
     --yellow: #f9b131;
-    --bright: #999999;
+    --bright: #a9a19e;
     --brighter: #eaeaea;
     --brightest: #ffffff;
     --dim: #4f585d;
@@ -402,6 +402,8 @@ button.join {
     text-transform: uppercase;
     margin: 10% 0;
 }
+
+button.join:hover {background-color: var(--brighter);}
 
 .numbered {}
 
