@@ -17,33 +17,44 @@
 
 <body>
 
-    <section class="topSection grid">
-        <article class="blue-square blue-bg">
-            <h2> We´ve got you Covered.</h2>
-            <p>
-                Together we keep each other safe at
-                home or at work. By paying a tiny
-                fee a day, you are fully insured all
-                day long. You get it all for as
-                little as <span class="brightest">$0.4 per pay.</span>
-            </p>
-            <button class="join">JOIN NOW</button>
-        </article>
-        <article class="red-square red-bg passpartou flex">
-            <p>What do we have to offer?</p>
-            <h3 class="brightest">Learn more</h3>
-        </article>
-        <article class="yellow-square yellow-bg passpartou flex">
-            <p>What are you waiting for?</p>
-            <h3 class="brightest">Join today</h3>
-        </article>
-    </section>
+    <header>
+        <section class="topSection grid">
+            <article class="blue-square blue-bg imgFamily">
+                <h2> We´ve got you Covered.</h2>
+                <p>
+                    Together we keep each other safe at
+                    home or at work. By paying a tiny
+                    fee a day, you are fully insured all
+                    day long. You get it all for as
+                    little as <span class="brightest">$0.4 per pay.</span>
+                </p>
+                <button class="join">JOIN NOW</button>
+            </article>
+            <article class="red-square red-bg passpartou flex">
+                <p>What do we have to offer?</p>
+                <h3 class="brightest">Learn more</h3>
+            </article>
+            <article class="yellow-square yellow-bg passpartou flex">
+                <p>What are you waiting for?</p>
+                <h3 class="brightest">Join today</h3>
+            </article>
+        </section>
+
+        <nav class="mainNav hide">
+            <ul class="navItems">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="#">Our offer</a></li>
+                <li><a class="link" href="#">Why us</a></li>
+                <li><a class="link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <nav></nav>
     <main>
-        <section class="bright-bg grid">
-            <div class="grid-container1">
+        <section class="bright-bg middle">
+            <div class="grid-container1 middle">
                 <div class="text-container1">
                     <h1 class="brightest">Your personal financial safety net online.</h1><button
                         class="join smartphone-hidden">JOIN NOW</button>
@@ -59,7 +70,6 @@
                 </div>
             </div>
             <div class="card-container">
-                <div>
                     <div class="card">
                         <div class="avatar-child"></div>
                         <h4>Children
@@ -67,7 +77,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor ligula vel felis
                             cursus egestas. Etiam consectetur finibus facilisis. Proin accumsan auctor purus, quis
                             finibus tellus accumsan id.</p>
-                    </div>
                 </div>
                 <div class="card">
                     <div class="avatar-adult"></div>
@@ -87,23 +96,90 @@
                 </div>
             </div>
         </section>
-        <section class="yellow-bg rectangle-big">
+        <section class="yellow-bg middle">
             <article class="about-us"><div class="about-us">
-                <h1 class=" brightest about-us">About us</h1>
+                <h1 class="brightest about-us">About us</h1>
                 <p class="about-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac ultricies massa. Donec id
                     malesuada
                     magna. Pellentesque aliquet libero erat, fermentum commodo sapien congue ac. Integer a elit lorem.
                     Vestibulum id venenatis diam, et eleifend augue. Curabitur ex tortor, auctor lobortis augue at,
                     euismod bibendum neque. Aenean ullamcorper nibh vitae orci laoreet, eu dictum nisi ultrices. Sed
                     condimentum nibh neque, at ultricies augue facilisis non.
-                </p> <p>
+                </p> <p class="about-us">
                     Pellentesque a tellus mauris. Nam sodales pretium rutrum. Aenean imperdiet, leo nec consectetur
                     blandit, risus erat commodo tortor, sit amet dignissim orci lorem vel felis. Ut tempus dignissim.
                 </p></div>
             </article>
         </section>
+        <section class="buttSection grid layout">
+            <article class="blue-bg how-it-works">
+                <h2 class="medium">How It works?</h2>
+            </article>
+            <div class="one">
+                <div class="small-text"></div>
+                <h3 class=nr>01</h3>
+                <div class="how-it-works">
+                    <p>
+                        Answer a few questions about yourself
+                    </p>
+                </div>
+            </div>
+    
+            <div class="two brighter-bg">
+                <div class="small-text">
+                    <h3 class=nr>02</h3>
+                </div>
+                <div class="how-it-works">
+                    <p>
+                        Choose a plan. Get a quote.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="three">
+                <div class="small-text">
+                    <h3 class=nr>03</h3>
+                </div>
+                <div class="how-it-works">
+                    <p>
+                        Answer some questions about your medical history.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="four red-bg">
+                <div class="small-text">
+                    <h3 class=nr>04</h3>
+                </div>
+                <div class="how-it-works">
+                    <p>
+                        Wait 90 sec to get approved.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="five">
+                <div class="small-text">
+                    <h3 class=nr>05</h3>
+                </div>
+                <div class="how-it-works">
+                    <p>
+                        Done!
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="end-detail">
+            <div class="up gray-bg hide">
+                <span>
+                        <img class="arrow" src="./img/Vector.png"></img>
+                </span>
+                <a class="button link" onclick="topFunction" id="myBtn" href="#">Take me up again!</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
