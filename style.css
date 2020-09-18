@@ -336,11 +336,6 @@ footer {
     justify-self: center;
 }
 
-text-container2 p {
-    padding-right: 175px;
-    padding-left: 50px;
-}
-
 .card h4 {
     margin-bottom: 0;
     margin-top: 0;
@@ -482,8 +477,6 @@ DESKTOP LAYOUT
 
 section.middle {
     padding-bottom: 10vh;
-    margin-left: 47.5vh;
-    margin-right: 47.5vh;
     padding: 5% 5% 0% 5%;
 }
 
@@ -549,6 +542,9 @@ section.middle {
         height: 285vh;
     }
 
+    .transparent {
+        color: rgba(0, 0, 0, 0.6);
+    }
 
     .card {
         margin-top: 20%;
