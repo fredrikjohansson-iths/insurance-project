@@ -155,9 +155,10 @@ p {
 
 /* fonts end*/
 
+label {color: var(--brightest);}
+
 .link {
     text-decoration: none;
-    font-family: var(--link);
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -368,7 +369,8 @@ div.about-us {
     line-height: 25px;
 }
 
-button.join {
+button.join,
+.formButton  {
     width: 130px;
     height: 40px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
@@ -379,6 +381,8 @@ button.join {
     text-transform: uppercase;
     margin: 10% 0;
 }
+
+.formButton {color:var(--darker)}
 
 button.join:hover {
     background-color: var(--brighter);
@@ -491,6 +495,13 @@ section.middle {
         margin-bottom: 4vh;
     }
 
+    .containerSquare.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
     div.middle {
         display: flex;
         flex-direction: column;
@@ -577,6 +588,7 @@ article p,
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
+    font-family: var(--paragraph);
 }
 
 /*
@@ -631,6 +643,8 @@ NAVIGATION
 
     list-style: none;
 }
+
+a .link:active {color: var(--darkest)}
 
 /*
 MAIN, HOW IT WORKS
@@ -786,6 +800,43 @@ DESKTOP LAYOUT
         grid-template-rows: repeat(2, minmax(minmax(0, 1fr) 340px));
     }
 
+    .containerSquare.flex {
+        flex-grow: 1;
+         
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 1002px;
+        max-height: 407px;
+            }
+         
+        .contactInfo {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 3%;
+        line-height: 30px;
+        background-color: var(--yellow);
+            }
+         
+        .contactInfo h2{
+        color: var(--brightest);
+            }
+         
+        .contactInfo p {
+        color: var(--brightest);
+        justify-self: flex-end;
+            }
+         
+        .roundMap {
+        display: none;
+            }
+         
+        .findUs
+        .containerSquare {
+        background-image: url(/img/mapLg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+            }
+
 }
 
 /*
@@ -842,13 +893,6 @@ CONTACT PAGE MOBILE
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.containerSquare.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -915,5 +959,7 @@ CONTACT PAGE MOBILE
         letter-spacing: -0.02em;
         width: 15ch;
     }
+
+    #comment {color: var(--darker);}
 
 }
