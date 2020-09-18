@@ -602,7 +602,7 @@ MOBILE
 }
 
 .imgFamily {
-    background: var(--blue) url('../img/family.png') bottom center no-repeat;
+    background: var(--blue) url('/img/family.png') bottom center no-repeat;
     background-size: 342px auto;
 }
 
@@ -832,7 +832,7 @@ DESKTOP LAYOUT
          
         .findUs
         .containerSquare {
-        background-image: url(./img/mapLg.png);
+        background-image: url(/img/mapLg.png);
         background-repeat: no-repeat;
         background-position: center;
             }
@@ -849,7 +849,7 @@ CONTACT PAGE MOBILE
 }
 
 .imgFatherSon {
-    background: var(--blue) url('../img/fatherSon.png') bottom center no-repeat;
+    background: var(--blue) url('./img/fatherSon.png') bottom center no-repeat;
     background-size: 200px;
 }
 
