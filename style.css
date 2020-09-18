@@ -190,6 +190,7 @@ h6 {
 /*CHANGED VALUE, Carl*/
 p {
     font-family: var(--paragraph);
+    
 }
 
 p.small {
@@ -251,50 +252,46 @@ nav link:hover {
 .avatar-child {
     background-color: var(--blue);
     background-image: url(/img/child.png);
-    background-position: bottom;
     background-size: 30%;
     background-repeat: no-repeat;
-    left: 1.25%;
-    position: relative;
-    top: -25%;
     border-radius: 4px;
-    width: 236px;
-height: 150px;
-background-position: center 40px;
-
+    min-width: 236px;
+    min-height: 150px;
+    background-position: center 40px;
+    position: relative;
+    bottom: 20px;
 }
 
+.grid-container1 {display: grid;
+    grid-template-columns: 1fr 1fr;margin-bottom: 100px;}
+
 .avatar-adult {
-    background-color: var(--red);
+    background-color: var(--yellow);
     background-image: url(/img/adult.png);
-    background-position: bottom;
-    background-size: 30%;
+    background-size: 35%;
     background-repeat: no-repeat;
-    left: 1.25%;
-    position: relative;
-    top: -25%;
     border-radius: 4px;
-    width: 236px;
-height: 150px;
-background-position: center 40px;
+    min-width: 236px;
+    min-height: 150px;
+    background-position: center 30px;
+    position: relative;
+    bottom: 20px;
 
 }
 
 .avatar-old 
 
 {
-    background-color: var(--yellow);
+    background-color: var(--red);
     background-image: url(/img/old.png);
-    background-position: bottom;
-    background-size: 30%;
+    background-size: 45%;
     background-repeat: no-repeat;
-    left: 1.25%;
-    position: relative;
-    top: -25%;
     border-radius: 4px;
-    width: 236px;
-height: 150px;
-background-position: center 40px;
+    min-width: 236px;
+    min-height: 150px;
+    background-position: center 40px;
+    position: relative;
+    bottom: 20px;
 
 }
 
@@ -302,50 +299,56 @@ background-position: center 40px;
     margin-top: 0%;
 }
 
-.grid-2by1 {
+.template-area-1 {
     grid-template-areas:
-        "a b";
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, minmax(375px, 501px));
+        "a"
+        "b";
+
+    grid-template-rows: repeat(2, auto auto);
 
 }
 
-.avatar-child {
-    background-color: var(--blue);
-    background-image: url(/img/child.png);
-    background-position: bottom;
-    background-size: 30%;
-    background-repeat: no-repeat;
-    left: 1.5%;
-    position: relative;
-    top: -25%;
-    border-radius: 4px;
-    width: 236px;
-height: 150px;
-background-position: center 40px;
+.card-container {margin-bottom: -175px;
+    display: flex;
+    justify-content: center;}
 
-}
+ p.about-us{
+    text-align: center;
+    }
 
+section {padding: 40px;}
 
+.grid-container1{display: grid;
+    grid-template-columns: 1fr 1fr;}
 
 
 .card {
     background-color: var(--brightest);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 1%;
-    margin-right: 2%;
-    position: relative;
+    margin-left: 10%;
     width: 256px;
     height: 308px;
     border-radius: 5px;
-    position: relative;
-    bottom: 30%;
     text-align: center;
+    display: flex;
+flex-direction: column;
+padding-left: 7px;
+padding-right: 7px;
 }
 
+.text-container1 {padding-left: 50px;
+    padding-right: 50px;width: 415px;}
+
+    .text-container1 h1 {margin-top:0;}
+
+.text-container2 {padding-left: 10%;
+    width: 310px;justify-self: center;}
+
+text-container2 p {padding-right: 175px;padding-left: 50px;}
+
 .card h4 {
-    position: relative;
-    bottom: 25%;
+    margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
 }
 
@@ -355,31 +358,28 @@ background-position: center 40px;
     font-size: 11px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.4);
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
+article.about-us {margin:15vh;}
 
-main {
-    display: flex;
-    justify-content: center;
-}
+div.about-us {display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;text-align: center;}
 
-.rectangle-big {
-    width: 1002px;
-    height: 612px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top:5%;
-}
-.grid-container {}
 
-.grid-container .a {
+.more-line-height {line-height: 25px;}
+
+.grid-area-a {
     grid-area: a;
 }
 
-.grid-container .b {
+.grid-area-b {
     grid-area: b;
+}
+
+.grid-area-c {
+    grid-area: c;
 }
 
 .grid-1by1 {
@@ -453,7 +453,7 @@ MOBILE
     height: 724px;
     padding: 5% 5% 0% 5%;
 
-    background: var(--blue) url('family.png') bottom center no-repeat;
+    background: var(--blue) url('img/family.png') bottom center no-repeat;
     background-size: 342px auto;
 }
 
@@ -498,24 +498,28 @@ DESKTOP LAYOUT
     grid-area: ys;
 }
 
-@media only screen and (max-width: 805px) {
-    .rectangle-big {flex-flow: column; height: 100%;
+@media only screen and (max-width: 375px) {
+
+    .grid-container1 {display: block;}
+
+    section.about-us {height: 245vh;}
+    div.about-us,article.about-us {margin: 0;}
+    grid-container1 {display: block;}
+    div.card-container {flex-flow: column; height: 100%;
         display: flex;
         flex-flow: column;
-        width: auto;}
+        width: auto;margin-bottom: 0vh;margin-top: -10vh;}
+
+        .text-container1, .text-container2 {padding: 0;}
+
+        section {padding: 30px;}
+
+        section.personal-finance {height: 285vh;}
 
         
-    .card {align-self: center; margin-top: 30%; bottom: 90%; }
-    div[class^="avatar"] {left: 3.5%}
+    .card {margin-top: 20%;margin-left: 8vw;}
 
     .smartphone-hidden {display: none;}
-
-
-    @media only screen and (max-width: 410px) {
-        .rectangle-big p {
-            margin-bottom: 10em;
-        }
-
    }
 
 @media only screen and (min-width: 750px) {
