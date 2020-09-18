@@ -397,7 +397,8 @@ button.join {
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     border-color: transparent;
     border-radius: 100px;
-    
+    background-color: var(--brightest);
+    color: var(--bright);
     /*ADDED, Carl*/
     text-transform: uppercase;
     margin: 10% 0;
