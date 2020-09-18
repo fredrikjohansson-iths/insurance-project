@@ -181,7 +181,7 @@ nav .link:hover {
 
 .avatar-child {
     background-color: var(--blue);
-    background-image: url(./img/child.png);
+    background-image: url('/img/child.png');
     background-size: 30%;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -200,7 +200,7 @@ nav .link:hover {
 
 .avatar-adult {
     background-color: var(--yellow);
-    background-image: url(./img/adult.png);
+    background-image: url('/img/adult.png');
     background-size: 35%;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -214,7 +214,7 @@ nav .link:hover {
 
 .avatar-old {
     background-color: var(--red);
-    background-image: url(./img/old.png);
+    background-image: url('/img/old.png');
     background-size: 45%;
     background-repeat: no-repeat;
     border-radius: 4px;
