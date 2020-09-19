@@ -179,6 +179,10 @@ nav .link:hover {
     display: flex;
 }
 
+.arrow {height: 10px;
+    width: 15px;
+    align-self: center;}
+
 .avatar-child {
     background-color: var(--blue);
     background-image: url('img/child.png');
@@ -384,9 +388,20 @@ button.join,
 
 .formButton {color:var(--darker)}
 
+.formButton:active,
+button.join:active
+{  transform: translateY(1px);}
+
+.formButton:hover {
+    background-color: var(--brighter);
+}
+
 button.join:hover {
     background-color: var(--brighter);
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover{transform: scale(1.2);}
 
 
 /*Fonts*/
@@ -830,14 +845,13 @@ DESKTOP LAYOUT
         display: none;
             }
          
-        .findUs
-        .containerSquare {
-        background-image: url('img/mapLg.png)';
+            .imgMap {
+        background-image: url('img/mapLg.png');
         background-repeat: no-repeat;
         background-position: center;
             }
 
-}
+        }
 
 /*
 CONTACT PAGE MOBILE
@@ -960,6 +974,9 @@ CONTACT PAGE MOBILE
         width: 15ch;
     }
 
-    #comment {color: var(--darker);}
+}
 
+#myBtn {    
+    display: flex;
+flex-direction: column;
 }
